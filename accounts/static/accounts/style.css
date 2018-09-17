@@ -18,10 +18,11 @@ footer {
     width: 100%;
     text-align: center;
 }
+
 form {
     color: white;
     font-family: "Venir";
-    font-size: 20px;
+    /*font-size: 20px;
     width: 100%;
-    text-align: center;
+    text-align: center;*/
 }

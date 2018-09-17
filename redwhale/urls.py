@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from django.conf.urls import url
+from redwhale import views
 urlpatterns = [
+    url(r'^$',views.login_redirect, name='login_redirect'),
     path('admin/', admin.site.urls),
-    path('', include('accounts.urls')),
+    path('accounts/', include('accounts.urls')),
 ]
