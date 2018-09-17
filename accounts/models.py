@@ -8,8 +8,10 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     bio = models.CharField(max_length=400, default='')
     interests = models.CharField(max_length=200, default='')
-    picture = models.ImageField(default=DEFAULT)
+    picture = models.ImageField(upload_to='profile_picture', default=DEFAULT)
 
+    def __str__(self):
+        return self.user.username
 def create_profile(sender, **kwargs):
     if(kwargs['created']):
         user_profile = UserProfile.objects.create(user=kwargs['instance'])
