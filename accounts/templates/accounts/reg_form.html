@@ -7,7 +7,7 @@
         {% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white;">Register</button>
-        <a href="{% url 'home' %}"><button type="button" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px;">Return Home</button></a>
+        <a href="{% url 'home' %}"><button type="button" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-left: 10px;">Return Home</button></a>
     </form>
 </div>
 {% endblock %}

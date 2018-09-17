@@ -16,11 +16,12 @@
 {% block body %}
 <br>
 <br>
-<h1 align="center" style="color: white;"> My Profile </h1>
+<h1 align="center" style="color: white;"> {{user.first_name}}'s Profile </h1>
 <div class="container">
     <a href="{% url 'logout' %}"><button type="button" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px;">Logout</button></a>
     <br>
     <br>
+    <img src="{{ user.userprofile.picture.url }}" style="float: right; width: 280px; height: auto; border-radius: 50%;">
     <p style="color: white;">USERNAME: {{user.username}}</p>
     <p>FIRST NAME: {{user.first_name}}</p>
     <p>LAST NAME: {{user.last_name}}</p>
