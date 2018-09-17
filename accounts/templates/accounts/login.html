@@ -10,11 +10,10 @@
     <form method="post">
         {% csrf_token%}
         {{ form.as_p }}
-    </form>
-    <a href="{%url 'home' %}">
-    <button type="submit" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px;">Home</button>
-    </a>
+    
+    <a href="{% url 'home' %}"><button type="button" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px;">Home</button></a>
     <button type="submit" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px; margin-left: 10px;">Login</button>
-    <button type="forgot" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-left: 10px;">Forgot Password ?</button>
+    <button type="forgot" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-left: 10px;">Forgot Password</button>
+    </form>
 </div>
 {% endblock %}
