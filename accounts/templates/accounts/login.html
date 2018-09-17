@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br>
+<br>
+<h2 align="center">Login</h2>
+<br>
+<br>
+<div align="center">
+    <form method="post">
+        {% csrf_token%}
+        {{ form.as_p }}
+    </form>
+    <a href="{%url 'home' %}">
+    <button type="submit" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px;">Home</button>
+    </a>
+    <button type="submit" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-right: 10px; margin-left: 10px;">Login</button>
+    <button type="forgot" class="btn btn-light" style="padding: 5px; background-color: transparent; color: white; margin-left: 10px;">Forgot Password ?</button>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <div class="jumbotron">
+        <h1 align="center">Welcome</h1>
+        <br>
+        <br>
+        <div align="center">
+            <a href="{% url 'login' %}"><button type="button" class="btn btn-info">Login</button></a>
+            <button type="button" class="btn btn-warning">Signup</button>
+            <a href="https://amitrajitbose.github.io" target="_blank"><button type="button" class="btn btn-light" style="padding: 5px;">About Me</button></a>
+        </div>
+    </div>
+    <div class="container">
+        <br>
+        <img src="https://png.icons8.com/ios/100/000000/so-so.png" style="float: right;">
+        <br>
+        <h2>Hello World !</h2>
+        <h2>Hello Redwhale Wireless !</h2>
+    </div>
+{% endblock %}

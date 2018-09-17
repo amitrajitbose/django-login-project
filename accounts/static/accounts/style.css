@@ -1,0 +1,27 @@
+body {
+    background-color: #5d22e8;
+}
+h1 {
+    font-size: 54px;
+    font-family: "Venir";
+}
+h2 {
+    font-family: "Venir";
+    color: white;
+}
+footer {
+    color: white;
+    font-size: 12px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+form {
+    color: white;
+    font-family: "Venir";
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
