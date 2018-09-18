@@ -4,3 +4,5 @@ Fully functional and secure login system.This is complete website developed on P
 
 ### Author
 Amitrajit Bose
+
+### COPYRIGHTS RESERVED
